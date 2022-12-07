@@ -80,8 +80,7 @@ GROUP BY t.TypeID;
 SELECT a.GroupID,AccountID,GroupName as total
 FROM `groupaccount`a
 RIGHT JOIN `Group` b ON a.GroupID=b.GroupID
-ORDER BY a.GroupID ASC
-HAVING total= 0;
+ORDER BY a.GroupID ASC;
 
 /*Question15*/
 
